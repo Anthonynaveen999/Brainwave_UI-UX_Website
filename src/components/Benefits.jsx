@@ -23,8 +23,15 @@ const Benefits = () => {
                                 <h5 className="h5 mb-5">{item.title}</h5>
                                 <p className="body-2 mb-6 text-n-3">{item.text}</p>
                                 <div className="flex items-center mt-auto">
-                                    <img src={item.iconUrl} alt={item.title} height={48} width={48}/>
-                                    <p className="ml-auto text-sm font-code font-bold uppercase text-n-1 tracking-wider">explore more</p>
+                                    <img 
+                                        src={item.iconUrl} 
+                                        alt={item.title} 
+                                        height={48} 
+                                        width={48}
+                                    />
+                                    <p className="ml-auto text-xs font-code font-bold uppercase text-n-1 tracking-wider">
+                                        explore more
+                                    </p>
                                     <Arrow />
                                 </div>
                             </div>
@@ -33,7 +40,13 @@ const Benefits = () => {
                                 <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
                                     {
                                         item.imageUrl && (
-                                            <img src={item.imageUrl} alt={item.title} width={380} height={362} className="w-full h-full object-cover"/>
+                                            <img 
+                                                src={item.imageUrl} 
+                                                alt={item.title} 
+                                                width={380} 
+                                                height={362} 
+                                                className="w-full h-full object-cover"
+                                            />
                                         )
                                     }
                                 </div>
